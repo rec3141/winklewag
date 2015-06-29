@@ -1,0 +1,7 @@
+I wrote this command-line program to practice foreign language vocabulary.  A word is shown in a chosen language and guessed in another chosen language (depending on the dictionary extent).  Dots are shown to represent each letter of the word to be guessed.  Words typed wrong are immediately repeated until typed correctly twice in a row or skipped (by hitting enter).  At the end of each round the incorrect and skipped words are repeated and rounds continue until there are no incorrect words.  Results are logged to a text file.  A dictionary entry option is still in development.
+
+The dictionaries are formatted as tab-delimited text files having the extension ".dic".  Each column is headed by the name of the language.  Synonyms can be separated by a forward slash (/).  Special characters (e.g. ñ, ü) are currently replaced by their TeX equivalents (e.g. \~n, \"u) and only the base character (e.g. n, u) is expected by the program, but this will probably change now that I've figured out how to easily input these characters in KDE using deadkeys (http://www.tuxmagazine.com/node/1000044).  More dictionaries are available at http://www.dicts.info/dictionaries.php but they are not properly formatted, you'll have to do that yourself (and send it to me so that I can upload it here!).
+
+Requires perl module List::Util 'shuffle';
+
+Enjoy
